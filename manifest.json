@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Grayscale",
+  "description": "Toggles a grayscale filter on the active tab.",
+  "version": "1.0",
+  "icons": {
+    "32": "images/icon32x32.png",
+    "64": "images/icon64x64.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "32": "images/icon32x32.png",
+      "64": "images/icon64x64.png"
+    },
+    "default_title": "Toggle grayscale"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
